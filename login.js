@@ -20,8 +20,7 @@ function login() {
 
   return (
     // 유저 아이디와 비밀번호를 담아 서버에 post 요청
-    axios
-      .post("http://localhost:3000", { userId, userPassword })
+    axios.post("http://localhost:3000", { userId, userPassword })
       // 받은 엑세스 토큰을 변수에 저장
       .then((res) => (accessToken = res.data))
   );
